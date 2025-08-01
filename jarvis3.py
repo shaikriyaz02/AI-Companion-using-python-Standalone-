@@ -291,9 +291,9 @@ def sendEmail(to, content):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login("219X1A3343@gprec.ac.in", "Jassu@2021")# sender's gmail account
+    server.login("shaikriyazsm@gmail.com", "Riyaz@2024")# sender's gmail account
     #recipient_email = input("Enter the recipient's email address: ")
-    server.sendmail('219X1A3343@gprec.ac.in', to, content)
+    server.sendmail('shaikriyazsm@gmail.com', to, content)
     print("Email sent successfully")
     server.close()
 def open_notepad() :
@@ -699,7 +699,7 @@ def get_weather(city, wapi_key):
         speak("Sorry, I encountered an error while fetching the weather information.")
 
 def play_spotify():
-    path = "C:\\Users\\Jaswanth Kumar Reddy\\AppData\\Roaming\\Spotify\\spotify.exe"  
+    path = "C:\\Users\\Riyaz\\AppData\\Roaming\\Spotify\\spotify.exe"  
 
     if is_spotify_running():
         speak("Spotify is already running. Playing a song...")
